@@ -156,7 +156,7 @@ plt.tight_layout()
 #plt.savefig('simulations_all_numSats_13Nov2019.pdf',bbox_inches='tight')
 plt.savefig('simulations_all_numSats_22July2020.pdf',bbox_inches='tight')
 
-plt.show()
+#plt.show()
 
 F_500=[calculate_FOM(500,h)[1] for h in H]
 F_1000=[calculate_FOM(1000,h)[1] for h in H]
@@ -285,7 +285,7 @@ plt.tight_layout()
 
 plt.savefig('simulations_all_FOM_22July2020.pdf',bbox_inches='tight')
 
-plt.show()
+#plt.show()
 
 '''
 Rates corresponding to points in the plot above for C(h,d).
@@ -327,7 +327,7 @@ plt.tight_layout()
 plt.savefig('simulations_all_rateFOM_23July2020.pdf',bbox_inches='tight')
 
 
-plt.show()
+#plt.show()
 
 Rmax_500=[calculate_rate(500,h)[1] for h in H]
 Rmax_1000=[calculate_rate(1000,h)[1] for h in H]
@@ -386,7 +386,7 @@ plt.tight_layout()
 plt.savefig('simulations_all_rate_21July2020.pdf',bbox_inches='tight')
 
 
-plt.show()
+#plt.show()
 
 '''
 Maximum rates for (d,h) pairs among all sat configs tested.
@@ -432,7 +432,7 @@ plt.tight_layout()
 plt.savefig('simulations_all_rateMax_22July2020.pdf',bbox_inches='tight')
 
 
-plt.show()
+#plt.show()
 
 # Combine data into a 2D array
 rates = np.array([Rmax_500, Rmax_1500, Rmax_2500, Rmax_3500, Rmax_4500, Rmax_5000], dtype=float)
@@ -470,4 +470,4 @@ plt.yticks(distances[::-1], fontsize=12)  # Reverse the y-ticks to match the cor
 
 plt.tight_layout()
 plt.savefig('heatmap_entanglement_distribution_rate.pdf', bbox_inches='tight')
-plt.show()
+#plt.show()
